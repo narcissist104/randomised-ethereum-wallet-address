@@ -1,0 +1,23 @@
+Public Function RandomizeAddress(Num1 As Integer, Num2 As Integer)
+Dim Rand As String
+Rand = "0x"
+Application.Volatile
+Do
+    i = i + 1
+    Dim myValue
+    Randomize
+    myValue = Int((3 * Rnd) + 1)
+    Dim RandDigit As String
+    
+    If myValue = 1 Then
+        RandDigit = Chr(Int(((85 * Rnd + 38)) Mod (57 + 1 - 48) + 48))
+    ElseIf myValue = 2 Then
+        RandDigit = Chr(Int(((85 * Rnd + 38)) Mod (90 + 1 - 65) + 65))
+    Else
+        RandDigit = Chr(Int(((85 * Rnd + 38)) Mod (122 + 1 - 97) + 97))
+    End If
+    
+    Rand = Rand + RandDigit
+Loop Until i = 40
+RandomizeAddress = Rand
+End Function
