@@ -1,5 +1,5 @@
 # Randomised-ethereum-wallet-address
-VBA (Visual Basic for Applications) code that produces a randomised wallet address in th0x e Ethereum address format intended to produce dummy data in Excel.
+VBA (Visual Basic for Applications) code that produces a randomised wallet address in the Ethereum address format intended to produce dummy data in Excel.
 
 Produces strings starting with '0x' followed by 40 random lower-case letters, upper-case letters, and numbers.
 
